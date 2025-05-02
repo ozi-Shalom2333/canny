@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+   
+    
+}
+body{
+    width: 100%;
+    height: auto;
+}
+header{
+    width: 100%;
+    height: max-content;
+    min-height: 8vh;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.logo{
+    width: 20%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.logo img{
+    object-fit: contain;
+    width: 35%;
+    cursor: pointer;
+}
+.dropdowns{
+    width: 35%;
+    height: max-content;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    padding: 20px;
+}
+.dropdowns p{
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.authentication{
+    width: max-content;
+    height: max-content;
+    display: flex;
+    gap: 10px;
+}
+.authentication button{
+    width: max-content;
+    padding: 15px 22px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.authentication button:first-of-type{
+    background-color: transparent;
+}
+.authentication button:last-of-type{
+    background-color: #525DF9;
+    color: white;
+}
+.hero-1{
+    height: max-content;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.hero-1 > div:first-of-type{
+    border: 2px solid #6C75FA;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #525DF9;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.hero-1 h1{
+    font-size: 64px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.2;
+}
+.hero-1 > p{
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.3;
+}
+.hero-1 aside {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+.hero-1 aside button{
+    width: max-content;
+    height: max-content;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+.hero-1 aside button:first-of-type{
+    border: 1px solid  #DDDBDB;
+    background-color: transparent;
+   
+}
+.hero-1 aside button:first-of-type:hover{
+    border: 1px solid #525DF9;
+}
+.hero-1 aside button:last-of-type{
+    background-color: #525DF9;
+    color: white;
+}
+.hero-1 aside button:last-of-type:hover .arrow {
+    transform: translateX(5px);
+    transition: transform 0.3s ease;
+  }
+  
+.hero-1 aside button:last-of-type:hover{
+  
+    background-color: #6C75FA;
+}
+.arrow {
+    font-size: 20px; 
+    margin-left: 8px;
+    display: inline-block;
+    line-height: 1;
+  }
+  .nocard{
+    display: flex;
+    gap: 10px;
+    color: #818181;
+  }
+  .heropic1{
+    height: 100vh;
+    max-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .heropic1 img{
+    object-fit: contain;
+    width: 80%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .Trusted{
+    width: 100%;
+    height: max-content;
+    padding: 30px 0 0 0;
+    text-align: center;
+    margin-top: 5%;
+
+  }
+  .Trusted h2{
+    color: #818181;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .Trusted aside{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    padding: 60px;
+    gap: 10px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .Trusted aside div{
+    width: 19%;
+    height: 13vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Trusted aside div img{
+    object-fit: contain;
+    width: 60%;
+  }
