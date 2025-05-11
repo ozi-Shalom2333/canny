@@ -21,8 +21,8 @@
           <p>Customers</p>
         </div>
         <div class="authentication">
-           <button>Sign in</button>
-           <button>Sign up</button>
+          <button aria-label="Sign in">Sign in</button>
+          <button aria-label="Sign up">Sign up</button>
         </div>
     </header>
     <section class="hero-1">
@@ -76,8 +76,74 @@
         <div>
           <img src="images/missive-logo-0633ebbdcd64f8cce16d3383f89a7def.svg" alt="">
         </div>
-        
       </aside>
     </section>
+    <section class="feedback">
+      <h1>Your complete customer feedback platform</h1>
+      <p>Organize all your feedback in one place, prioritize what to build next, and keep everyone updated</p>
+      <aside>
+        <div>
+          <div>
+            <img src="images/696de172-5762-40f9-a146-85f2ea6b7bc0.svg" alt="">
+          </div>
+          <h2>Collect feedback</h2>
+          <p>Gather, analyze, and organize feedback in a centralized location</p>
+        </div>
+        <div>
+          <div>
+            <img src="images/27981aa7-8fd6-468f-8428-a87b9f42581d.svg" alt="">
+          </div>
+          <h2>Analyze feedback</h2>
+          <p>Uncover valuable customer insights to make better product decisions</p>
+        </div>
+        <div>
+          <div>
+            <img src="images/4c81812b-2edb-4670-ae52-b843ec82237b.svg" alt="">
+          </div>
+          <h2>Prioritize requests</h2>
+          <p>Develop formulas to automatically score feedback and feature requests</p>
+        </div>
+        <div>
+          <div>
+            <img src="images/8a853eaa-c2f6-4885-a0a9-73e2a41358e5.svg" alt="">
+          </div>
+          <h2>Build roadmaps</h2>
+          <p>Create public or private roadmaps to keep everyone updated on your progress</p>
+        </div>
+        <div>
+          <div>
+            <img src="images/0ade57c1-5236-4513-8841-2a21bd0c46f2.svg" alt="">
+          </div>
+          <h2>Share updates</h2>
+          <p>Build a public changelog to keep your audience informed and engaged</p>
+        </div>
+      </aside>
+    </section>
+    <section class="hero-feedback">
+       <div>
+         <h1>Collect feedback</h1>
+         <p>Stop letting ideas slip through the cracks. Collect, analyze, and organize feedback and feature requests in one dedicated tool.</p>
+         <ul>
+          <li>Automatically capture customer feedback from conversations with Autopilot</li>
+          <li>Detect and merge duplicates so you can quantify ideas</li>
+          <li>Set up a feedback portal to let users share requests directly from your site</li>
+          <li>Integrate customer support tools to let your team capture feedback on behalf of users
+          </li>
+         </ul>
+       </div>
+       <div>
+        <img src="https://assets.canny.io/ba11632113c7c832f74fe7745fa3a6e686171dd6/collect-28379dea9b0aa5e4b42d74ad92ff7f35.webp" alt="">
+       </div>
+    </section>
+    <script>
+      window.addEventListener("scroll", function() {
+        const header = document.querySelector("header");
+        if (window.scrollY > 50) {
+          header.classList.add("scroll-shrink");
+        } else {
+          header.classList.remove("scroll-shrink");
+        }
+      });
+    </script>    
 </body>
 </html>

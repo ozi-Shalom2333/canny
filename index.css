@@ -3,13 +3,12 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-   
-    
+    font-optical-sizing: auto;  
 }
 body{
     width: 100%;
     height: auto;
+    padding-top: 14vh; 
 }
 header{
     width: 100%;
@@ -20,8 +19,20 @@ header{
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid black;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background-color: white; 
+    z-index: 1000;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
+
+.scroll-shrink {
+  padding: 10px; 
+  background-color: rgba(255, 255, 255, 0.9); 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+}   
 .logo{
     width: 20%;
     height: 8vh;
@@ -169,7 +180,7 @@ header{
     height: max-content;
     padding: 30px 0 0 0;
     text-align: center;
-    margin-top: 5%;
+    margin: 10% 0 10% 0;
 
   }
   .Trusted h2{
@@ -196,4 +207,110 @@ header{
   .Trusted aside div img{
     object-fit: contain;
     width: 60%;
+  }
+  .feedback{
+    width: 100%;
+    height: max-content;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .feedback > h1{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .feedback img {
+    filter: brightness(0) saturate(100%) invert(39%) sepia(73%) saturate(942%) hue-rotate(202deg) brightness(90%) contrast(90%);
+}
+ .feedback > p{
+    font-size: 20px;
+    text-align: center;
+  }
+  .feedback > aside{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    gap: 20px;
+    padding-inline: 30px;
+    justify-content: center;
+    margin-top: 5%;
+  }
+  .feedback > aside > div{
+    width: 18%;
+    height: 30vh;
+    border: 1px solid  #DDDBDB;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  .feedback > aside > div > div{
+    width: fit-content;
+    height: max-content;
+    padding: 10px;
+    background-color: #F2F3FF;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .feedback > aside > div h2{
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .feedback > aside > div p{
+    font-size: 14px;
+    color: #697596;
+  }
+  .hero-feedback{
+    min-height: 100vh;
+    height: max-content;
+    width: 90%;
+    display: flex;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .hero-feedback > div{
+    width: 50%;
+    height: fit-content;
+    min-height: 100vh;
+    border-radius: 10px;
+  }
+  .hero-feedback > div:first-of-type{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 10px;
+     padding: 100px;
+     line-height: 1.5;
+  }
+  .hero-feedback > div:first-of-type h1{
+    font-size: 40px;
+    font-weight: 500;
+    width: 100%;
+    float: left;
+  }
+  .hero-feedback > div:first-of-type p{
+    font-size: 18px;
+  }
+  .hero-feedback > div:first-of-type li{
+    font-size: 18px;
+    color: #202020;
+  }
+  .hero-feedback > div:last-of-type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-feedback > div:last-of-type img{
+    object-fit: contain;
+    width: 95%;
   }
