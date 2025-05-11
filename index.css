@@ -249,7 +249,25 @@ header{
     padding: 20px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
   }
+  .feedback > aside > div:hover {
+    background-color: #f0f0f0;
+    border-color: #525DF9;
+}
+.feedback > aside > div h2,
+.feedback > aside > div p {
+    transition: color 0.3s ease;
+}
+  .feedback > aside > div.active {
+    background-color: #525DF9;
+    color: white;
+    border-color: #525DF9;
+}
+.feedback > aside > div.active h2,
+.feedback > aside > div.active p {
+    color: white;
+}
   .feedback > aside > div > div{
     width: fit-content;
     height: max-content;
@@ -314,3 +332,49 @@ header{
     object-fit: contain;
     width: 95%;
   }
+
+
+
+  @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .logo {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .dropdowns {
+        width: 100%;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .hero-1 h1 {
+        font-size: 36px;
+    }
+    .hero-1 > p {
+        font-size: 18px;
+    }
+    .Trusted aside {
+        flex-direction: column;
+        align-items: center;
+    }
+    .Trusted aside div {
+        width: 80%;
+    }
+    .feedback > aside {
+        flex-direction: column;
+        align-items: center;
+    }
+    .feedback > aside > div {
+        width: 80%;
+    }
+    .hero-feedback {
+        flex-direction: column;
+    }
+    .hero-feedback > div {
+        width: 100%;
+        min-height: auto;
+        padding: 20px;
+    }
+}
