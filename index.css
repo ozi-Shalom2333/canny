@@ -14,7 +14,7 @@ header{
     width: 100%;
     height: max-content;
     min-height: 8vh;
-    padding: 20px;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -332,7 +332,58 @@ header{
     object-fit: contain;
     width: 95%;
   }
+.Autopilot{
+  width: 100%;
+  height: max-content;
+  margin: 10% 0;
+  padding: 30px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 
+}
+.Autopilot > h1{
+  font-size: 40px;
+  font-weight: 500;
+}
+.Autopilot > p{
+  font-size: 20px;
+}
+.autopilot{
+  width: 100%;
+  height: max-content;
+  min-height: 45vh;
+  display: flex;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+  background-color: #DEE0FC;
+  
+}
+.autopilot > aside{
+  width: 30%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  gap: 20px;
+  
+}
+.autopilot > aside > h1{
+  font-size: 20px;
+  font-weight: 600;
+}
+.autopilot> aside > p{
+  line-height: 1.7;
+  font-size: 14px;
+}
+.autolast{
+   width: 70%;
+   height: 45vh;
+   background-image: url(https://assets.canny.io/087b1424c80e015e07d1396f0380294833a14d6d/autopilot-1-ed3334ba5c9e26f9a19a15132cf59e5f.webp);
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+}
 
 
   @media (max-width: 768px) {
